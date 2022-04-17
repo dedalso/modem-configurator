@@ -1,0 +1,71 @@
+﻿<Window x:Name="Window" x:Class="Modem_Configurator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Modem_Configurator"
+        mc:Ignorable="d"
+        Title="Конфигурация модема"
+        Width="400" Height="600" MinWidth="400" MinHeight="600"
+        ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{StaticResource BackgroundColor}" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Модель:" />
+            <TextBox x:Name="ModelBox" />
+            <TextBlock Text="IMEI:" />
+            <TextBox x:Name="IMEIBox" />
+            <TextBlock Text="Оператор:" />
+            <TextBox x:Name="OperatorBox" />
+            <TextBlock Text="Уровень сигнала:" />
+            <TextBox x:Name="SignalLevelBox" />
+            <TextBlock Text="Текущее время:" />
+            <TextBox x:Name="CurrentTimeBox" />
+            <TextBlock Text="CCID:" />
+            <TextBox x:Name="CCIDBox" />
+            <TextBlock Text="IMSI:" />
+            <TextBox x:Name="IMSIBox" />
+            <TextBlock Text="IP адрес GPRS:" />
+            <TextBox x:Name="IPBox" />
+            <TextBlock Text="Модуль GSM:" />
+            <TextBox x:Name="GSMModuleBox" />
+            <TextBlock Text="Режим 2G/3G:" />
+            <TextBox x:Name="ModemModeBox" />
+            <TextBlock Text="U питания, В:" />
+            <TextBox x:Name="VoltageBox" />
+            <TextBlock Text="ПО контроллера:" />
+            <TextBox x:Name="ControllerSoftwareBox" />
+            <TextBlock Text="ПО модуля GSM:" />
+            <TextBox x:Name="GSMSoftwareBox" />
+        </Grid>
+        <Grid>
+            <TextBlock Text="События" />
+            <TextBox x:Name="EventLog" />
+        </Grid>
+    </Grid>
+</Window>
