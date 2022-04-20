@@ -2,8 +2,5 @@
 
 namespace Modem_Configurator
 {
-    public partial class App : Application
-    {
-
-    }
+    public partial class App : Application { }
 }
